@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+button{color:red;
+	    background-color:black;}
+input{color:black;
+       background-color:red;}
+</style>
+</head>
+<body>
+
+
+
+<p>
+First number:  <input id="ad" ></p>
+<P>
+Second numebr:<input id="ap" ><br>
+</p>
+
+<p> Please enter the first and second number</p>
+
+<button onclick="myFunction1()">multiply</button><br>
+<button onclick="myFunction2()">divide</button><br>
+
+<p>The value is:</p>
+<p id="demo"></p>
+
+<script> 
+
+function myFunction1(){
+var x= document.getElementById("ad").value;
+var y= document.getElementById("ap").value;
+var result = x+y;
+
+document.getElementById("demo").innerHTML=result;
+}
+
+function myFunction2(){
+var x= document.getElementById("ad").value;
+var y= document.getElementById("ap").value;
+var result= x/y; 
+
+document.getElementById("demo").innerHTML=result;
+}
+
+</script>
+</body>
+</html>
+
+
